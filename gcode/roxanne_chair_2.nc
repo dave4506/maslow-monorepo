@@ -3,7 +3,7 @@
 (G Code optimized for OpenBuilds OX CNC 1000 x 750 with GRBL V0.9j controller)
 
 (Program Name : 1001)
-(4 Operations :)
+(2 Operations :)
 (1 : 2D Contour2)
 (  Tool : Flat End Mill 2 Flutes, Diam = 6.35mm, Len = 25.4mm)
 (  Spindle : RPM = 5000, set router dial to 1)
@@ -12,20 +12,12 @@
 (  Tool : Flat End Mill 2 Flutes, Diam = 6.35mm, Len = 25.4mm)
 (  Spindle : RPM = 5000, set router dial to 1)
 (  Machining time : 14 min 42 sec)
-(3 : Drill2)
-(  Tool : Flat End Mill 2 Flutes, Diam = 6.35mm, Len = 25.4mm)
-(  Spindle : RPM = 5000, set router dial to 1)
-(  Machining time : 28 sec)
-(4 : Drill1)
-(  Tool : Flat End Mill 2 Flutes, Diam = 6.35mm, Len = 25.4mm)
-(  Spindle : RPM = 5000, set router dial to 1)
-(  Machining time : 11 sec)
 
 G90 G94
 G17
 G21
 
-(Operation 1 of 4 : 2D Contour2)
+(Operation 1 of 2 : 2D Contour2)
 
 G53 G0 Z-10
 G54
@@ -405,7 +397,7 @@ X-5.7253 Y-33.653
 G3 X-5.7337 Y-33.9568 I3.166 J-0.2391
 G0 Z6.096
 
-(Operation 2 of 4 : 2D Pocket1)
+(Operation 2 of 2 : 2D Pocket1)
 
 G54
 S5000 M3
@@ -2579,66 +2571,6 @@ X-15.3262 Y-388.939
 G3 X-14.0258 Y-386.3007 I-2.3785 J2.812
 G1 X-13.9041 Y-383.7224
 G0 Z11.176
-
-(Operation 3 of 4 : Drill2)
-
-G54
-S5000 M3
-X-743.2757 Y-450.5145
-Z6.096
-G1 Z-13.984 F508
-G0 Z6.096
-X-673.0741 Y-456.895
-G1 Z-13.984 F508
-G0 Z6.096
-X-593.6593 Y-464.0733
-G1 Z-13.984 F508
-G0 Z6.096
-X-520.1552 Y-470.8118
-G1 Z-13.984 F508
-G0 Z6.096
-X-510.088 Y-410.3421
-G1 Z-13.984 F508
-G0 Z6.096
-X-353.499 Y-485.9252
-G1 Z-13.984 F508
-G0 Z6.096
-X-441.0693 Y-477.9615
-G1 Z-13.984 F508
-G0 Z6.096
-X-422.1568 Y-410.041
-G1 Z-13.984 F508
-G0 Z6.096
-X-342.7488 Y-409.8113
-G1 Z-13.984 F508
-G0 Z6.096
-X-268.9371 Y-409.5047
-G1 Z-13.984 F508
-G0 Z6.096
-X-189.1988 Y-409.2752
-G1 Z-13.984 F508
-G0 Z6.096
-X-118.7083 Y-409.0374
-G1 Z-13.984 F508
-G0 Z6.096
-
-(Operation 4 of 4 : Drill1)
-
-G54
-S5000 M3
-X71.7134 Y38.985
-Z6.096
-G1 Z-19.05 F508
-G0 Z6.096
-X1.2224 Y38.752
-G1 Z-19.05 F508
-G0 Z6.096
-X1.5019 Y-476.015
-G1 Z-19.05 F508
-G0 Z6.096
-X71.993 Y-476.248
-G1 Z-19.05 F508
-G0 Z6.096
 
 G53 Z-10
 M5
